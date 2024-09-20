@@ -1,0 +1,214 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-blue:#001b46;
+    --navy-blue: #027de8;
+}
+
+
+nav{
+    z-index: 999;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--dark-blue);
+    padding: 2em 1em ;
+}
+
+.brand-logo a{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+
+}
+.navy{
+    color: var(--navy-blue);
+}
+
+.menu-list a{
+    color: white;
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 0em 1em;
+}
+.menu-list a:hover{
+    color: rgb(255, 0, 136);
+}
+
+.material-symbols-outlined{
+    color:#0088ff;
+    height: 10vh;
+}
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account a{
+    color: white;
+    font-size: 1.3em;
+    padding: 0em 0.3em;
+    text-decoration: none;
+}
+.profile img{
+    height: 5vh;
+}
+/* nav ends */
+
+/* hero page */
+.hero-page{
+    height:100vh;
+    width: 100%;
+    background-image: url(assests/pexels-pixabay-262347.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10em 5em;
+}
+
+.first p{
+    font-size: 3em;
+    font-weight: 600;
+    padding:1em 0 1em 0;
+}
+.second p{
+    font-size: 2.5em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+.third{
+    font-size: 1.4em;
+    color:rgb(255, 255, 255);
+}
+.user-options{
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid var(--dark-blue);
+    background-color: #0f254a;
+    opacity: 0.7;
+    border-radius: 2em;
+    margin-top: 3em;
+    color:azure;
+    padding: 2em;
+}
+.user-options h3{
+    font-size: 1.5em;
+}
+.options{
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.options input{
+    height: 4vh;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-icon img{
+    height: 3.5vh;
+    margin-bottom: -0.4em;
+}
+
+.arbitrary-page{
+    height: 100%;
+    width: 100%;
+    background-image: url(assests/pexels-evgeny-tchebotarev-1058775-2187605.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+}
+
+.container{
+    width: 70vw;
+    color: rgb(215, 221, 223);
+    font-size: 1.1em;
+    line-height: 1.4em;
+    padding: 2em;
+}
+.arbitrary-page h1{
+    padding-bottom: 0.5em;
+}
+.arbitrary-page p{
+    font-size: 1.08em;
+}
+.welcome,.help,.choose,.started{
+    padding: 1.5em;
+}
+
+nav.scrolled{
+    background-color:rgb(64, 58, 116);
+}
+
+nav.scrolled .menu-list a{
+    color:#09ceff;
+}
+
+
+/* responsiveness */
+@media(max-width: 919px){
+  nav{
+    padding: 2em 0.5em;
+  }
+  .menu-list{
+    font-size: 0.9em;
+  }
+  .profile img{
+    height: 4vh;
+  }
+  .container h1{
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 824px){
+    .menu-list a{
+        padding: 0.5em;
+    }
+}
+@media (max-width: 736px){
+    .brand-logo a{
+        font-size: 1.5em;
+    }
+    .menu-list a{
+        font-size: 1.4em;
+    }
+    .account a{
+        font-size: 1.1em;
+    }
+}
+@media (max-width: 690px){
+    .brand-logo a{
+        font-size: 1.3em;
+    }
+    .menu-list a{
+        font-size: 1.2em;
+    }
+    .account a{
+        font-size: 1em;
+    }
+    .user-options{
+        padding: 0.8em;
+    }
+    .options{
+        padding: 0.2em;
+    }
+}
+@media (max-width: 690px){
+    .user-options{
+        font-size: 0.9em;
+    }
+}
